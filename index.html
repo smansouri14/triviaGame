@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trivia Game</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<style>
+</style>
+
+<body>
+
+
+    <h1 id="title">
+        <img id="cannon" src="assets/images/cannon.jpg" width="125px" height="50px"> Trivia Game
+        <img src="assets/images/cannonFlip.jpg" width="125px" height="50px">
+        <div id="show-number"></div>
+    </h1>
+    <div id="container">
+
+
+        <div class="row" style="float: left;">
+            
+            <div class="col-md-3" style="background-color: white; color: black;">
+                <img class="img-responsive" alt="" src="assets/images/ramsey.png" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/auba.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/bellerin.png" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/laca.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/iwobi.png" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/kolasniac.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/monreal.png" width="100%" height="12%" />
+            </div>
+
+        
+            <div class="col-md-6" style="background-color: white; color: black;" id="questions">
+                <form id="quiz" name = "quiz">
+                    <p>1) From May 2003 to October 2004, Arsenal went unbeaten in the Premier League. Across how many games were they unbeaten?</p>
+                    <input type="radio" name="question1" value="49" id="choices"> 49
+                    <br>
+                    <input type="radio" name="question1" value="50" id="choices"> 50
+                    <br>
+                    <input type="radio" name="question1" value="52" id="choices"> 52
+                    <br>
+                    <input type="radio" name="question1" value="47" id="choices"> 47
+                    <br>
+                    <br> 
+                
+
+                    <p>2) How many goals did Thierry Henry score in his career at Arsenal?</p>
+                    <input type="radio" name="question2" value="248" id="choices"> 248
+                    <br>
+                    <input type="radio" name="question2" value="189" id="choices"> 189
+                    <br>
+                    <input type="radio" name="question2" value="226" id="choices"> 226
+                    <br>
+                    <input type="radio" name="question2" value="173" id="choices"> 173
+                    <br>
+                    <br> 
+             
+
+                    <p>3) When was Arsenal Football Club founded?</p>
+                    <input type="radio" name="question3" value="1885" id="choices"> 1885
+                    <br>
+                    <input type="radio" name="question3" value="1886" id="choices"> 1886
+                    <br>
+                    <input type="radio" name="question3" value="1874" id="choices"> 1874
+                    <br>
+                    <input type="radio" name="question3" value="1887" id="choices"> 1887
+                    <br>
+                    <br> 
+               
+
+                    <p>4) In what year did the legendary Arsene Wenger take over?</p>
+                    <input type="radio" name="question4" value="1996" id="choices"> 1996
+                    <br>
+                    <input type="radio" name="question4" value="1997" id="choices"> 1997
+                    <br>
+                    <input type="radio" name="question4" value="1998" id="choices"> 1998
+                    <br>
+                    <input type="radio" name="question4" value="1999" id="choices"> 1999
+                    <br>
+                    <br> 
+               
+
+                    <p>5) Which player scored the first Premier League goal for Arsenal at the new Emirates Stadium?</p>
+                    <input type="radio" name="question5" value="Gilberto Silva" id="choices"> Gilberto Silva
+                    <br>
+                    <input type="radio" name="question5" value="Dennis Bergkamp" id="choices"> Dennis Bergkamp
+                    <br>
+                    <input type="radio" name="question5" value="Thierry Henry" id="choices"> Thierry Henry
+                    <br>
+                    <input type="radio" name="question5" value="Nicolas Anelka" id="choices"> Nicolas Anelka
+                    <br>
+                    <br> 
+              
+
+                    <p>6) Which player still plays for Arsenal?</p>
+                    <input type="radio" name="question6" value="Cec Fabregas" id="choices"> Cesc Fabregas
+                    <br>
+                    <input type="radio" name="question6" value="Aaron Ramsey" id="choices"> Aaron Ramsey
+                    <br>
+                    <input type="radio" name="question6" value="Olivier Giroud" id="choices"> Olivier Giroud
+                    <br>
+                    <input type="radio" name="question6" value="Theo Walcott" id="choices"> Theo Walcott
+                    <br>
+                    <br> 
+               
+
+                    <p>7) Who currently wears the number 34 for Arsenal?</p>
+                    <input type="radio" name="question7" value="Rob Holding" id="choices"> Rob Holding
+                    <br>
+                    <input type="radio" name="question7" value="Hector Bellerin" id="choices"> Hector Bellerin
+                    <br>
+                    <input type="radio" name="question7" value="Mohammed Elneny" id="choices"> Mohammed Elneny
+                    <br>
+                    <input type="radio" name="question7" value="Granit Xhaka" id="choices"> Granit Xhaka
+                    <br>
+                    <br> 
+             
+
+                    <p>8) What place did Arsenal finish the 2017-2018 Campaign?</p>
+                    <input type="radio" name="question8" value="4th" id="choices"> 4th
+                    <br>
+                    <input type="radio" name="question8" value="5th" id="choices"> 5th
+                    <br>
+                    <input type="radio" name="question8" value="6th" id="choices"> 6th
+                    <br>
+                    <input type="radio" name="question8" value="7th" id="choices"> 7th
+                    <br>
+                    <br> 
+              
+
+                    <p>9) Who is taking over for Arsene Wenger after 22 years of being the Manager of Arsenal?</p>
+                    <input type="radio" name="question9" value="Unai Emery" id="choices"> Unai Emery
+                    <br>
+                    <input type="radio" name="question9" value="Jose Mourinho" id="choices"> Jose Mourinho
+                    <br>
+                    <input type="radio" name="question9" value="Pep Guardiola" id="choices"> Pep Guardiola
+                    <br>
+                    <input type="radio" name="question9" value="Javin MAneen" id="choices"> Javin Maneen
+                    <br>
+                    <br> 
+              
+
+                    <p>10) Which one of these players turned their back on the Club?</p>
+                    <input type="radio" name="question10" value="Cesc Fabregas" id="choices"> Cesc Fabregas
+                    <br>
+                    <input type="radio" name="question10" id="choices" value="Alexis Sanchez"> Alexis Sanchez
+                    <br>
+                    <input type="radio" name="question10" value="Emmanuel Adebayor"id="choices"> Emmanuel Adebayor
+                    <br>
+                    <input type="radio" name="question10" value="All" id="choices"> All
+                
+            </div>
+
+            <div class="col-md-3" style="background-color: white; color: black;">
+                <img class="img-responsive" alt="" src="assets/images/ozil.png" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/mkhi.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/welbeck.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/cech.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/wilshere.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/xhaka.jpg" width="100%" height="12%" />
+                <img class="img-responsive" alt="" src="assets/images/mustafi.jpg" width="100%" height="12%" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="bottom">
+                <input id= "button" type= "button" value="Submit Answer" onclick="check();">
+                <div id="afterCheck">
+                        <p id="message"></p>
+                        <img id="picture" width= "400px" height= "400px">
+                        <p id="numberCorrect"></p>
+                        <p id="numberWrong"></p>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</form>
+
+
+
+
+
+
+
+
+</body>
+
+<script src="assets/javascript/app.js"></script>
+
+</html>

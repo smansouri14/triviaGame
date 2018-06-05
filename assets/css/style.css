@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    color: black;
+    font-size: 44px;
+    font-display: bold;
+    text-align: center;
+    width: 100%;
+    background:#db0808;
+    padding: 50px;
+    font-family: asap, sans-serif;
+    color: white;
+}
+
+#cannon {
+    text-align: center;
+}
+
+#container {
+    background: white;
+}
+#choices:hover {
+    cursor: pointer;
+    background-color:pink;
+} 
+
+.row {
+    width:100%;
+}
+
+#left {
+    float: left;
+}
+
+#questions {
+    font-family: asap, sans-serif;
+    font-size: 24px;
+    width: 60%;
+    background:#c0cace;
+    text-align: left;
+    border-left: solid 1px black;
+    border-right:solid 1px black;
+    float: left;
+}
+
+#right {
+    float: left;
+}
+
+#afterCheck {
+    visibility: hidden;
+}
+
+#numberCorrect {
+    color: black;
+}
+
+#numberWrong {
+    color: black;
+}
+
+#bottom {
+    color: black;
+    font-size: 44px;
+    font-display: bold;
+    text-align: center;
+    width: 100%;
+    background:#db0808;
+    padding: 20px;
+    font-family: asap, sans-serif;
+    height: 900px;
+    padding-bottom: 300px;
+}
