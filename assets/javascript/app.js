@@ -106,15 +106,15 @@ var wrong = 0;
          range = 3;
      }
      var range;
-     if (correct > 3 && correct <7) {
+     if (correct >= 3 && correct <7) {
          range = 2;
      }
      var range;
-     if (correct > 7 && correct <9) {
+     if (correct >= 7 && correct <9) {
          range = 1;
      }
      var range;
-     if (correct > 9) {
+     if (correct >= 9) {
          range = 0;
      }
 
